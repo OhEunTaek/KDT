@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Noto Serif';
+  font-weight: 400;
+  font-style: normal;
+  src: url('font/NotoSerif-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 400;
+  font-style: normal;
+  src: url('font/NotoSansKR-Regular.otf')
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, input, textarea, p, blockquote, th, td, button{margin: 0; padding: 0;}
+html, body{width: 100%; height: 100%; font-size: 12px; line-height: 1; font-family: 'Noto Serif', "Noto Sans", serif;}
+.ko{font-family: "Noto Sans";}
+ol, ul, li{list-style: none;}
+a{text-decoration: none;}
+em{font-style: normal;}
+img{vertical-align: top; max-width: 100%;}
+button{border: 0; background: 0; cursor: pointer;}
+fieldset{border: 0;}
+table{width: 100%; border-collapse: collapse; table-layout: fixed;}
+input{font-family: inherit; background: none; border: 0; vertical-align: top;}
+address{font-style: normal;}
+textarea{resize: none; vertical-align: top; border: 0;}
+
+.hidden{position: absolute; left: -9999px;}

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Main</title>
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="main.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/typed.js"></script>
+  <script type="text/javascript" src="js/slide.js"></script>
+
+  <script type="text/javascript" src="main.js"></script>
+
+  <script type="text/javascript">
+    $(function () {
+      $(".work").slide({
+        panel: ".panel",
+        navi: ".pager",
+        type: "fade"
+      })
+    })
+  </script>
+
+</head>
+
+<body>
+  <div id="intro">
+    <div class="intro_txt">
+      <span id="typed"></span>
+    </div>
+    <button class="btn_scroll" type="button" name="button">Scroll Down</button>
+  </div>
+  <div id="wrap">
+    <header id="header">
+      <h1 class="logo">
+        <a href="#">OET</a>
+      </h1>
+    </header>
+    <div id="container">
+      <div class="indicate">
+        <ul>
+          <li>
+            <a href="#">About me</a>
+          </li>
+          <li>
+            <a href="#">Portfolio</a>
+          </li>
+          <li>
+            <a href="#">Contact me</a>
+          </li>
+        </ul>
+      </div>
+      <div id="content">
+        <div id="menu1" class="menu">
+          <div class="menu_box">
+            <a href="#">
+              <h2 class="tit">
+                <span class="num">01</span>
+                <span class="txt">About Me</span>
+              </h2>
+              <ul>
+                <li>Profile</li>
+                <li>Skiis</li>
+              </ul>
+              <span class="more">More</span>
+              <span class="back">Back</span>
+            </a>
+          </div>
+          <div class="list_box">
+            <div class="scroll_box">
+              <div class="profile">
+                <h3>Profile</h3>
+                <div class="profile_box">
+                  <p class="img_box">
+                    <img src="./img/oet.jpg" alt="">
+                  </p>
+                  <ul>
+                    <li>
+                      <span class="p_tit ko">이름</span>
+                      <span class="p_desc">오은택</span>
+                    </li>
+                    <li>
+                      <span class="p_tit ko">나이</span>
+                      <span class="p_desc">32 (1987.06.24)</span>
+                    </li>
+                    <li>
+                      <span class="p_tit ko">번호</span>
+                      <span class="p_desc">010-3382-0644</span>
+                    </li>
+                    <li>
+                      <span class="p_tit ko">이메일</span>
+                      <span class="p_desc">giloet777@gmail.com</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                  <li>HTML5 &amp; <br> CSS3 &amp; <br> jQuery &amp; javascript</li>
+                  <li>React &amp; <br> Redux</li>
+                  <!-- <li class="ko"></li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="menu2" class="menu">
+          <div class="menu_box">
+            <a href="#">
+              <h2 class="tit">
+                <span class="num">02</span>
+                <span class="txt">Portfolio</span>
+              </h2>
+              <ul>
+                <li>Project</li>
+                <li>Portfolio PDF</li>
+              </ul>
+              <span class="more">More</span>
+              <span class="back">Back</span>
+            </a>
+          </div>
+          <div class="list_box">
+            <div class="scroll_box">
+              <!-- 포토폴리오 작업물 -->
+              <div class="work">
+                <div class="pager">
+                  <ul>
+                    <li>
+                      <a href="#">STUDIO ALICE</a>
+                    </li>
+                    <li>
+                      <a href="#">Portfolio site</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="panel">
+                  <ul>
+                    <!-- 휴비스 반응형 작업물 -->
+                    <li class="work_01">
+                      <h4>STUDIO ALICE</h4>
+                      <div class="work_img">
+                        <img src="./img/studioalice.jpg" alt="">
+                      </div>
+                      <div class="work_txt">
+                        <ul>
+                          <li>
+                            <span class="work_tit ko">뷰포트</span>
+                            <span class="work_date">Responsive</span>
+                          </li>
+                          <li>
+                            <span class="work_tit ko">기간</span>
+                            <span class="work_date">17.01~17.04</span>
+                          </li>
+                          <li>
+                            <span class="work_tit ko">구성</span>
+                            <span class="work_date">Main, subpage1~8</span>
+                          </li>
+                          <li class="work_skill">
+                            <span class="work_tit ko">스킬</span>
+                            <ul>
+                              <li>html5 &amp; css3</li>
+                              <li>javaScript</li>
+                              <li>React &amp; Redux</li>
+                            </ul>
+                          </li>
+                          <li class="work_desc">
+                            <span class="work_tit ko">설명</span>
+                            <p class="ko">
+                              React로 제작된 프로젝트입니다. <br>
+                              기업형 홈페이지에서 주로 사용되는 기업소개, 게시판영역, 미디어영역(유튜브,갤러리), 찾아오시는길(지도:카카오), 회원가입페이지로 구성되어있습니다. <br> 현재
+                              프로젝트는 취업시 해당 회사로 귀속되어있어 포트폴리오만 링크합니다.
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="work_links">
+                        <a class="ko" href="./src/react_포트폴리오_작업설명서_STUDIOALICE.pdf">포트폴리오</a>
+                        <a class="ko" href="#">프로젝트</a>
+                      </div>
+                    </li>
+                    <!-- 포트폴리오 사이트 작업물 -->
+                    <li class="work_02">
+                      <h4>Neige</h4>
+                      <div class="work_img">
+                        <img src="./img/neige.jpg" alt="">
+                      </div>
+                      <div class="work_txt">
+                        <ul>
+                          <li>
+                            <span class="work_tit ko">뷰포트</span>
+                            <span class="work_date">Responsive</span>
+                          </li>
+                          <li>
+                            <span class="work_tit ko">기간</span>
+                            <span class="work_date">18.03~18.04</span>
+                          </li>
+                          <li>
+                            <span class="work_tit ko">구성</span>
+                            <span class="work_date">Main, subpage1~6</span>
+                          </li>
+                          <li class="work_skill">
+                            <span class="work_tit ko">스킬</span>
+                            <ul>
+                              <li>html5 &amp; css3</li>
+                              <li>javaScript</li>
+                              <li>React &amp; Redux</li>
+                            </ul>
+                          </li>
+                          <li class="work_desc">
+                            <span class="work_tit ko">설명</span>
+                            <p class="ko">
+                              Redux로 양방향 data관리, localstorage로 간단한 데이터 저장과 CRUD기능구현, AJAX로 비동기적인 API호출, 반응형 웹페이지구현
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="work_links">
+                        <a class="ko" href="./src/react_포트폴리오_작업설명서2_Neige.pdf">포트폴리오</a>
+                        <a class="ko" href="#">프로젝트</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="menu3" class="menu">
+          <div class="menu_box">
+            <a href="#">
+              <h2 class="tit">
+                <span class="num">03</span>
+                <span class="txt">Contact Me</span>
+              </h2>
+              <ul>
+                <li>Personal Data</li>
+                <li>Sned E-Mail</li>
+              </ul>
+              <span class="more">More</span>
+              <span class="back">Back</span>
+            </a>
+          </div>
+          <div class="list_box">
+            <div class="scroll_box">
+              <div class="ad">
+                <h3>Personal Data</h3>
+                <ul>
+                  <li>
+                    <span class="ad_tit ko">번호</span>
+                    <span class="ad_desc">010-3382-0644</span>
+                  </li>
+                  <li>
+                    <span class="ad_tit ko">이메일</span>
+                    <span class="ad_desc">giloet777@gmail.com</span>
+                  </li>
+                  <li>
+                    <span class="ad_tit ko">kakao</span>
+                    <span class="ad_desc">daebak07</span>
+                  </li>
+                  <li>
+                    <span class="ad_tit ko">주소</span>
+                    <span class="ad_desc">비공개</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="send">
+                <h3>SNED E-MAIL</h3>
+                <div class="send_form ko">
+                  <form class="" action="index.html" method="post">
+                    <fieldset>
+                      <legend class="hidden">메일 보내기 입력 폼</legend>
+                      <div class="tit_box">
+                        <label for="user_tit">제목</label>
+                        <input type="text" id="user_tit" name="" value="">
+                      </div>
+                      <div class="name_box">
+                        <label for="user_name">이름</label>
+                        <input type="text" id="user_name" name="" value="">
+                      </div>
+                      <div class="mail_box">
+                        <label for="user_mail">이메일</label>
+                        <input type="text" id="user_mail" name="" value="">
+                      </div>
+                      <div class="num_box">
+                        <label for="user_num">번호</label>
+                        <input type="text" id="user_num" name="" value="">
+                      </div>
+                      <div class="msg_box">
+                        <label for="user_desc">내용</label>
+                        <textarea id="user_desc" name="name" rows="8" cols="80"></textarea>
+                      </div>
+                      <button class="btn_sub ko" type="submit" name="button">보내기</button>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <p class="copy">Copyright &copy; 2020. OET, All rights reserved.</p>
+
+    </footer>
+  </div>
+</body>
+
+</html>
